@@ -30,8 +30,8 @@
 #include "drivers/DigitalOut.h"
 
 #define AT25DF041B_PAGE_COUNT           (2048)
-#define AT25DF041B_PAGE_BYTE_SIZE   		(256)
-#define AT25DF041B_TOTAL_BYTE_SIZE		(AT25DF041B_PAGE_COUNT * AT25DF041B_PAGE_BYTE_SIZE)
+#define AT25DF041B_PAGE_BYTE_SIZE       (256)
+#define AT25DF041B_TOTAL_BYTE_SIZE      (AT25DF041B_PAGE_COUNT * AT25DF041B_PAGE_BYTE_SIZE)
 
 #define AT25DF041B_ERASE_SECTOR_SIZE    4096
 
@@ -209,7 +209,7 @@ public:
      *
      *  @return         A string represent the BlockDevice class type.
      */
-    virtual const char *get_type() const;
+    virtual const char* get_type() const;
 
     /**
      * Puts the AT25DF041B into low-power standby mode
@@ -278,7 +278,7 @@ protected:
      * Gets the device ID
      * @param[in] id 3-byte buffer to store ID bytes
      */
-    void get_device_id(uint8_t* id);
+    void get_device_id(uint8_t *id);
 
     /**
      * Checks the device ID to make sure the AT25DF041B is available
